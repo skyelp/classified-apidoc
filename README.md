@@ -8,21 +8,21 @@
 
 3. Sample Request body:
 
-    {
-       "Name":"Arts",
-       "SubCategories":[
-          {
-             "Name":"Books"
-          },
-          {
-             "Name":"Paintings"
-          },
-          {
-             "Name":"Others"
-          }
-       ],
-       "Type":"MainSection"
-    }
+		{
+		"Name":"Arts",
+		"SubCategories":[
+		  {
+		     "Name":"Books"
+		  },
+		  {
+		     "Name":"Paintings"
+		  },
+		  {
+		     "Name":"Others"
+		  }
+		],
+		"Type":"MainSection"
+		}
 
 4. Request headers:
 
