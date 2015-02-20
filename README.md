@@ -203,8 +203,7 @@
 
 5. Sample Response :
 
-		[
-		    {
+			{
 				"ClassifiedDetails": {
 					"Type": "Demand",
 					"Category": null,
@@ -235,5 +234,67 @@
 				"IsPublished": false,
 				"Id": "54d50305fabfdf05b0a8ba60"
 			}
-		]
+		    
+		
+7. Additional Info:
+
+
+### API `GET /api/main/MyClassifieds`
+1. Desc: GET my classifieds
+
+2. Request param:
+
+		{
+			type : String // type = null or 'all' return all user classifieds, type = 'published' return all published classifieds,
+						  // type = 'saved' return all saved classifieds	
+		}
+
+3. Sample Request body:
+
+		{
+		}
+
+4. Request headers:
+
+		{
+			Content-Type : "application/json",
+			Accept : "application/json",
+			Authorization : "Bearer String" // Access token is required for this request
+		}
+
+5. Sample Response :
+		[
+			{
+				"ClassifiedDetails": {
+					"Type": "Demand",
+					"Category": null,
+					"Title": "hello 2nd",
+					"Description": "hello",
+					"Zip": 9100,
+					"Price": {
+						"AlternativePrice": "By Deal",
+						"Price": 11
+					}
+				},
+				"ClassifiedSection": {
+					"Section": "Electronics",
+					"ExtraSection": [
+						"Feature 1(+ Doller 10)"
+					],
+					"Subcategory": "Phones"
+				},
+				"Image": {
+					"Video": null,
+					"Image": []
+				},
+				"User": {
+					"Name": "user",
+					"UserId": "b397eeed-2275-4528-90f6-9b65504ebf8f",
+					"Email": "user@user.com"
+				},
+				"IsPublished": false,
+				"Id": "54d50305fabfdf05b0a8ba60"
+			}
+		]   
+		
 7. Additional Info:
