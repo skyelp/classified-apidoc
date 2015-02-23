@@ -299,3 +299,33 @@
 		]   
 		
 7. Additional Info:
+
+### API `GET /api/main/Classifieds/Image`
+1. Desc: GET a blob image url
+ 
+2. Request param:
+
+		{
+		}
+
+3. Sample Request body:
+
+		{
+		}
+
+4. Request headers:
+
+		{
+			Content-Type : "application/json",
+			Accept : "application/json",
+			Authorization : "Bearer String" // Access token is required for this request
+		}
+
+5. Sample Response :
+
+		{
+			"sasUrl": "https://skydocs.blob.core.windows.net/image/c11424e0-bc8a-43c3-9366-eebdead02a45.jpg?sv=2014-02-14&sr=c&sig=3friG15l8G2MMeALz9al%2FcoepMwkH7xFUhTFxQ0i0X8%3D&st=2015-02-23T13%3A13%3A30Z&se=2015-02-23T13%3A28%3A30Z&sp=w",
+			"imageUrl": "http://skydocs.blob.core.windows.net/image/c11424e0-bc8a-43c3-9366-eebdead02a45.jpg"
+		}   
+		
+7. Additional Info:
