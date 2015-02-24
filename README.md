@@ -435,7 +435,7 @@
 7. Additional Info:
 
 ### API `POST /api/main/Payment`
-1. Desc: GET date for classifieds section in addClassified
+1. Desc: payment 
  
 2. Request param:
 
