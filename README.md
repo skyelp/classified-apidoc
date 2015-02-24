@@ -329,3 +329,146 @@
 		}   
 		
 7. Additional Info:
+
+### API `GET /api/main/Classifieds/MainSection`
+1. Desc: GET date for classifieds section in addClassified
+ 
+2. Request param:
+
+		{
+		}
+
+3. Sample Request body:
+
+		{
+		}
+
+4. Request headers:
+
+		{
+			Content-Type : "application/json",
+			Accept : "application/json"
+		}
+
+5. Sample Response :
+
+		{
+			"Section": [
+				{
+					"OwnerId": "a85bcd2a-016b-4d02-b944-492ced86458c",
+					"Name": "Arts",
+					"Type": "MainSection",
+					"SubCategories": [
+						{
+							"OwnerId": null,
+							"Name": "Books",
+							"Type": null,
+							"SubCategories": null,
+							"Id": "54e130d7844d1927e0fd25cd"
+						},
+						{
+							"OwnerId": null,
+							"Name": "Paintings",
+							"Type": null,
+							"SubCategories": null,
+							"Id": "54e130d7844d1927e0fd25ce"
+						},
+						{
+							"OwnerId": null,
+							"Name": "Others",
+							"Type": null,
+							"SubCategories": null,
+							"Id": "54e130d7844d1927e0fd25cf"
+						}
+					],
+					"Id": "54e130d7844d1927e0fd25cc"
+				}
+			],
+			"ExtraSection": [
+				{
+					"Name": "Feature 2",
+					"Currency": "Euro",
+					"Price": {
+						"AlternativePrice": null,
+						"Price": 10
+					},
+					"Id": "540b279ffabfdc67cce77a61"
+				}
+			]
+		}  
+		
+7. Additional Info:
+
+### API `POST /api/main/sendmail`
+1. Desc: GET date for classifieds section in addClassified
+ 
+2. Request param:
+
+		{
+		}
+
+3. Sample Request body:
+
+		{
+			MailBody : string,
+			MailSubject : string,
+			ToAddress : {
+				Name : string,
+				MailAddress : string
+			}
+		}
+
+4. Request headers:
+
+		{
+			Content-Type : "application/json",
+			Accept : "application/json",
+			Authorization : "Bearer String" // Access token is required for this request
+		}
+
+5. Sample Response :
+
+		{
+			Success : boolean
+		}
+		
+7. Additional Info:
+
+### API `POST /api/main/Payment`
+1. Desc: GET date for classifieds section in addClassified
+ 
+2. Request param:
+
+		{
+		}
+
+3. Sample Request body:
+
+		{
+			FirstName : string,
+			LastName : string,
+			UserId : string,
+			Address : string,
+			State : string,
+			Zip : string,
+			CardNumber : string, // Required
+			Expiry : string, // Required
+			Amount : string, // Required
+			Description : string
+		}
+
+4. Request headers:
+
+		{
+			Content-Type : "application/json",
+			Accept : "application/json",
+			Authorization : "Bearer String" // Access token is required for this request
+		}
+
+5. Sample Response :
+
+		{
+			Success : boolean
+		}
+		
+7. Additional Info:
